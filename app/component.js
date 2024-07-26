@@ -70,7 +70,7 @@ export function CardH() {
 
 export function Product({pic}) {
     return (
-        <div id="product" class="md:m-5 mx-2 my-2 md:w-[40rem] md:h-[30rem] md:p-5 items-center justify-center flex flex-col md:flex-row rounded-lg  bg-white ">
+        <div id="product" class="md:m-5 w-full my-2 md:w-[40rem] md:h-[30rem] md:p-5 items-center justify-center flex flex-col md:flex-row rounded-lg  bg-white ">
             <a href="#">
                 <img class="rounded-t-lg md:h-96 h-96 bg-white" src={pic} alt="product image" />
             </a>
