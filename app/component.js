@@ -2,21 +2,21 @@
 
 export function Nav() {
     return (
-        <nav class="bg-white border-gray-200 bg-red-900">
+        <nav class="bg-red-900 border-gray-200">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#jumbotron" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class="self-center text-md md:text-2xl font-semibold whitespace-nowrap dark:text-white">Songket Pandai Sikek</span>
+                    <span class="self-center text-md md:text-2xl font-semibold whitespace-nowrap ">Songket Pandai Sikek</span>
                 </a>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
                         <li>
-                            <a href="#jumbotron" class="block py-2 px-3 text-white  rounded md:bg-transparent hover:text-[#E0A75E] md:p-0">Home</a>
+                            <a href="#jumbotron" class="block py-2 px-3  rounded md:bg-transparent hover:text-[#E0A75E] md:p-0">Home</a>
                         </li>
                         <li>
-                            <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-[gray-100] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 dark:text-white md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                            <a href="#about" class="block py-2 px-3 rounded hover:bg-[gray-100] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
                         </li>
                         <li>
-                            <a href="#product" class="block py-2 px-3 text-gray-900 rounded hover:bg-[#E0A75E] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 dark:text-white md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Product</a>
+                            <a href="#product" class="block py-2 px-3 text-gray-900 rounded hover:bg-[#E0A75E] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Product</a>
                         </li>
                     </ul>
                 </div>
@@ -94,7 +94,7 @@ export function Footer() {
     return (
 
 
-        <footer class="bg-white shadow bg-red-900">
+        <footer class="bg-red-800">
             <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
                 <span class="text-sm text-[#E0A75E] sm:text-center">© 2024 <a href="https://flowbite.com/" class="hover:underline">Songket Pandai Sikek™</a>. All Rights Reserved.
                 </span>
