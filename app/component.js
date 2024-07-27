@@ -1,28 +1,23 @@
 'use client'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
-
 
 export function Nav() {
     return (
-        <nav class="bg-red-900 border-gray-200">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#jumbotron" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class="self-center text-md md:text-2xl font-semibold whitespace-nowrap text-white">Songket Pandai Sikek</span>
+        <nav className="bg-red-900 border-gray-200">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#jumbotron" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span className="self-center text-md md:text-2xl font-semibold whitespace-nowrap text-white">Songket Pandai Sikek</span>
                 </a>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
                         <li>
-                            <a href="#jumbotron" class="block py-2 px-3  rounded md:bg-transparent hover:text-[#E0A75E] md:p-0">Home</a>
+                            <a href="#jumbotron" className="block py-2 px-3  rounded md:bg-transparent hover:text-[#E0A75E] md:p-0">Home</a>
                         </li>
                         <li>
-                            <a href="#about" class="block py-2 px-3 rounded hover:bg-[gray-100] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                            <a href="#about" className="block py-2 px-3 rounded hover:bg-[gray-100] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
                         </li>
                         <li>
-                            <a href="#product" class="block py-2 px-3 text-gray-900 rounded hover:bg-[#E0A75E] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Product</a>
+                            <a href="#product" className="block py-2 px-3 text-gray-900 rounded hover:bg-[#E0A75E] md:hover:bg-transparent md:border-0 md:hover:text-[#E0A75E] md:p-0 md:dark:hover:text-[#E0A75E] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Product</a>
                         </li>
                     </ul>
                 </div>
@@ -36,14 +31,14 @@ export function Jumbotron() {
     return (
 
 
-        <section id="jumbotron" class="bg-center bg-no-repeat bg-cover bg-[url('minangkabau.webp')] bg-gray-700 bg-blend-multiply" >
-            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl" data-aos="fade-up">Pengabdian Kepada Masyarakat</h1>
-                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Selamat datang di situs web kami yang didedikasikan sebagai bentuk pengabdian terhadap masyarakat untuk memperkenalkan dunia orang tentang seni songket pandai sikek dari minangkabau</p>
-                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                    <a href="#about" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#E0A75E] hover:bg-[#F9D689] focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900" data-aos="fade-right">
+        <section id="jumbotron" className="bg-center bg-no-repeat bg-cover bg-[url('minangkabau.webp')] bg-gray-700 bg-blend-multiply" >
+            <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+                <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Pengabdian Kepada Masyarakat</h1>
+                <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Selamat datang di situs web kami yang didedikasikan sebagai bentuk pengabdian terhadap masyarakat untuk memperkenalkan dunia orang tentang seni songket pandai sikek dari minangkabau</p>
+                <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                    <a href="#about" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#E0A75E] hover:bg-[#F9D689] focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900" data-aos="fade-right">
                         Explore
-                        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                         </svg>
                     </a>
@@ -73,17 +68,20 @@ export function CardH() {
     )
 }
 
-export function Product({pic}) {
+export function Product({pic, judul, deskripsi}) {
     return (
-        <div id="product" class="md:m-5 w-full my-2 md:w-[40rem] md:h-[30rem] md:p-5 items-center justify-center flex flex-col md:flex-row rounded-lg  bg-white ">
+        <div id="product" className="md:m-5 w-full my-2 md:w-[40rem] md:h-[30rem] md:p-5 items-center justify-center flex flex-col md:flex-row rounded-lg  bg-white ">
             <a href="#">
-                <img class="rounded-t-lg md:h-96 h-96 bg-white" src={pic} alt="product image" />
+                <img className="rounded-lg md:h-96 h-96 bg-white" src={pic} alt="product image" />
             </a>
             <div className="md:p-5 p-3 md:w-96 w-full bg-[#E0A75E]">
-                <h1 className="text-2xl font-bold text-[#973131] mb-5 border-4 border-[#E0A75E] border-b-[#973131]">Songket</h1>
+                <h1 className="text-2xl font-bold text-[#973131] mb-5 border-4 border-[#E0A75E] border-b-[#973131]">{judul}</h1>
                 <ul className="max-w-md ml-5 space-y-1 list-disc list-inside text-white">
-                    <li>Quality Materials: Songket is made from high-quality materials such as silk and precious metal threads, ensuring its durability and longevity.</li>
-                    <li>Handcrafted: Each piece of songket is handwoven, providing a personal touch and quality that is difficult to achieve with mass production.</li>
+                    <p>
+                        {deskripsi}
+                    </p>
+                    {/* <li>Quality Materials: Songket is made from high-quality materials such as silk and precious metal threads, ensuring its durability and longevity.</li>
+                    <li>Handcrafted: Each piece of songket is handwoven, providing a personal touch and quality that is difficult to achieve with mass production.</li> */}
                 </ul>
                 <div className="flex md:flex-row flex-col text-center md:justify-around items-center w-full mt-20">
                     {/* <button type="button" class=" text-2xl font-bold flex justify-center items-center text-white font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-red-900 dark:hover:bg-red-800 focus:outline-none dark:focus:ring-blue-800">
@@ -105,22 +103,22 @@ export function Footer() {
     return (
 
 
-        <footer class="bg-red-800">
-            <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                <span class="text-sm text-[#E0A75E] sm:text-center">© 2024 <a href="https://flowbite.com/" class="hover:underline">Songket Pandai Sikek™</a>. All Rights Reserved.
+        <footer className="bg-red-800">
+            <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                <span className="text-sm text-[#E0A75E] sm:text-center">© 2024 <a href="https://flowbite.com/" className="hover:underline">Songket Pandai Sikek™</a>. All Rights Reserved.
                 </span>
-                <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-[#E0A75E] sm:mt-0">
+                <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-[#E0A75E] sm:mt-0">
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                        <a href="#" className="hover:underline me-4 md:me-6">About</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline">Contact</a>
+                        <a href="#" className="hover:underline">Contact</a>
                     </li>
                 </ul>
             </div>
