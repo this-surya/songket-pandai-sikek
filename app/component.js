@@ -1,5 +1,15 @@
 'use client'
+import TypeIt from "typeit-react";
 
+function Type({text, speed}){
+    return(
+        <TypeIt options={{
+            strings : [text], 
+            speed : speed, 
+            waitUntilVisible: true
+        }} />
+    )
+}
 
 export function Nav() {
     return (
@@ -33,8 +43,16 @@ export function Jumbotron() {
 
         <section id="jumbotron" className="bg-center bg-no-repeat bg-cover bg-[url('minangkabau.webp')] bg-gray-700 bg-blend-multiply" >
             <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Pengabdian Kepada Masyarakat</h1>
-                <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Selamat datang di situs web kami yang didedikasikan sebagai bentuk pengabdian terhadap masyarakat untuk memperkenalkan dunia orang tentang seni songket pandai sikek dari minangkabau</p>
+                <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl" data-aos="fade-up">Pandai Sikek</h1>
+                <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                    <TypeIt
+                        options={{
+                            strings: ["Selamat datang Uda/Uni, website ini menyediakan informasi tentang macam macam songket pandai sikek dan dapat dipesan melalu sistem online"],
+                            speed: 1, 
+                            waitUntilVisible: true
+                        }}
+                    />
+                    </p>
                 <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                     <a href="#about" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#E0A75E] hover:bg-[#F9D689] focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900" data-aos="fade-right">
                         Explore
@@ -58,8 +76,8 @@ export function CardH() {
                 <div className=" bg-[#E0A75E] p-5 rounded-xl m-5 flex flex-col items-center">
                     <h2 class="mb-3 text-3xl font-extrabold tracking-tight text-[#973131]">Songket Pandai Sikek</h2>
                     <ul className="max-w-md space-y-1 list-disc list-inside text-white h-full flex items-center">
-                        <li><span className="font-bold">Desain Rumit:</span> Setiap songket merupakan karya seni dengan pola dan desain rumit, sering kali menampilkan motif tradisional yang indah dan simbolis.</li>
-                        <li><span className="font-bold">Keunikan:</span> Setiap songket memiliki keunikan karena dibuat dengan tangan sehingga berbeda dengan produk yang diproduksi secara massal.</li>
+                        <li><span className="font-bold">Desain Rumit:</span><Type text={'<br> Setiap songket merupakan karya seni dengan pola dan desain rumit, sering kali menampilkan motif tradisional yang indah dan simbolis.'} speed={1}/></li>
+                        <li><span className="font-bold">Keunikan:</span><Type text={'<br>Setiap songket memiliki keunikan karena dibuat dengan tangan sehingga berbeda dengan produk yang diproduksi secara massal.'} speed={1}/></li>
                     </ul>
                 </div>
             </div>
@@ -74,7 +92,7 @@ export function Product({pic, judul, deskripsi}) {
             <a href="#">
                 <img className="rounded-lg md:h-96 h-96 bg-white" src={pic} alt="product image" />
             </a>
-            <div className="md:p-5 p-3 md:w-96 w-full bg-[#E0A75E]">
+            <div className="md:p-5 p-3 md:w-96 md:h-80 w-full bg-[#E0A75E]">
                 <h1 className="text-2xl font-bold text-[#973131] mb-5 border-4 border-[#E0A75E] border-b-[#973131]">{judul}</h1>
                 <ul className="max-w-md ml-5 space-y-1 list-disc list-inside text-white">
                     <p>
